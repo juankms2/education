@@ -8,3 +8,15 @@ A simple guessing game.
 
 
 This game is an example of the usage of the sys module, user input from command line and how to handle exceptions.
+
+
+## Run with
+
+Game
+```
+python guessing_game.py
+```
+Tests
+```
+python tests/guessing_game_test.py
+```
