@@ -12,11 +12,13 @@ This game is an example of the usage of the sys module, user input from command 
 
 ## Run with
 
-Game
+From the `guessing_game` directory do:
+
+To start the game
 ```
 python guessing_game.py
 ```
-Tests
+To run the unit tests
 ```
-python tests/guessing_game_test.py
+python -m unittest
 ```
