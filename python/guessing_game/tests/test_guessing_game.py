@@ -1,5 +1,5 @@
-import sys
-sys.path.append('../guessing_game')
+# import sys
+# sys.path.append('../guessing_game')
 
 import unittest
 import guessing_game
