@@ -5,7 +5,7 @@ import random
 
 def get_game_params(args):
     params = {}
-    if len(args) < 3 or len(args) > 3:
+    if len(args) < 3 or len(args) > 3:    # What??!!! FIXME(): len(args) != 3
         return params
 
     try:
@@ -34,7 +34,7 @@ def guess_number(user_guess, guess_params):
     Verifies the given user_guess has the required value present in guess_params['guess'].
     ''' 
     try:
-        guess = int(user_guess)
+        guess = int(user_guess)    # FIXME(): Can be inline in the following statement.
         return guess == guess_params["guess"]
     except ValueError:
         raise ValueError('Mmmm, it looks like you entered an invalid number ' +
@@ -69,7 +69,8 @@ def start_playing():
             > python guessing_number 1 24\n
             The provided values were: {params["num1"]} and {params["num2"]}\n''')
         continue_game = False
-    
+
+    # FIXME(): Extract to a separate function.
     while continue_game:
         try:
             user_guess = input(f'Guess the number between {params["num1"]} and {params["num2"]}:  ')
